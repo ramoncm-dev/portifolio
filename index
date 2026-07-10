@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramon | Dev Full Stack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-texto">
+      <h1>Oi, eu sou Ramon</h1>
+      <p>Dev Full Stack | React + Node.js</p>
+      <div class="botoes">
+        <a href="#projetos" class="btn">Ver Projetos</a>
+        <a href="#" class="btn btn-outline">Baixar CV</a>
+      </div>
+    </div>
+    <div class="hero-foto">
+      <img src="foto.jpg" alt="Foto de Ramon">
+    </div>
+  </section>
+
+  <section id="projetos" class="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="grid-projetos">
+      <div class="card-projeto">
+        <h3>Calculadora</h3>
+        <p>Calculadora feita com HTML, CSS e JS</p>
+        <a href="calculadora/index.html">Ver Projeto</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Ramon. Feito com ❤️</p>
+  </footer>
+</body>
+</html>
