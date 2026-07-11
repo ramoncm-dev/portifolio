@@ -3,45 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ramon | Dev Full Stack</title>
+  <title>Ramon CM | Estudante de ADS</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <h2>Ramon CM</h2>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section class="hero">
-    <div class="hero-texto">
+  <section class="hero" id="sobre">
+    <div>
+      <p class="tag">Estudante de Análise e Desenvolvimento de Sistemas</p>
       <h1>Oi, eu sou Ramon</h1>
-      <p>Dev Full Stack | React + Node.js</p>
-      <div class="botoes">
-        <a href="#projetos" class="btn">Ver Projetos</a>
-        <a href="#" class="btn btn-outline">Baixar CV</a>
+      <p>Dev Full Stack em formação | React + Node.js + Banco de Dados</p>
+      <p class="data">Início do curso: 08/04/2026</p>
+      <a href="#projetos" class="btn">Ver Projetos</a>
+      <a href="#" class="btn btn-outline">Baixar CV</a>
+    </div>
+    <img src="foto.jpg" alt="Foto de Ramon">
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Tecnologias</h2>
+    <div class="grid">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+    </div>
+  </section>
+
+  <section id="projetos" class="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Calculadora</h3>
+        <p>Projeto com HTML, CSS e JavaScript puro. Operações básicas.</p>
+        <a href="#">Ver Código</a>
+      </div>
+      <div class="card">
+        <h3>Sistema de Etiquetas</h3>
+        <p>Modelo Excel 4x1 para impressão na Zebra ZT411.</p>
+        <a href="#">Ver Projeto</a>
+      </div>
+      <div class="card">
+        <h3>Portfólio</h3>
+        <p>Este site. Deploy feito na Vercel.</p>
+        <a href="#">Você está aqui</a>
       </div>
     </div>
-    <div class="hero-foto">
-      <img src="foto.jpg" alt="Foto de Ramon">
-    </div>
   </section>
 
-<div class="card">
-  <h3>Calculadora</h3>
-  <p>HTML, CSS e JS puro. Primeiro projeto da faculdade.</p>
-  <a href="https://github.com/ramoncm-dev/calculadora">Ver Código</a>
-</div>
-<div class="card">
-  <h3>Sistema de Etiquetas</h3>
-  <p>Excel 4x1 para impressora Zebra ZT411.</p>
-  <a href="#">Ver Projeto</a>
-</div>
-<div class="card">
-  <h3>Portfólio</h3>
-  <p>Site pessoal com deploy na Vercel.</p>
-  <a href="#">Você está aqui</a>
-</div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2026 Ramon. Feito com ❤️</p>
+  <footer id="contato">
+    <h2>Contato</h2>
+    <p>GitHub: @ramoncm-dev | LinkedIn | WhatsApp</p>
+    <p>© 2026 Ramon CM. Feito com ☕ e muito código</p>
   </footer>
 </body>
 </html>
