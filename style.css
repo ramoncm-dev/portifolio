@@ -57,3 +57,18 @@ footer { text-align: center; padding: 40px 20px; background: #111; margin-top: 6
 .email { background: #8e24aa; color: #fff; border-color: #8e24aa; }
 .linkedin { background: #0077b5; color: #fff; border-color: #0077b5; }
 .github { background: #24292e; color: #fff; border-color: #24292e; }
+footer {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+footer .contact-buttons {
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.copyright {
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.7;
+}
