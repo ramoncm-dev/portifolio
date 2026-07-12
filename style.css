@@ -29,3 +29,31 @@ nav a:hover { color: #8e24aa; }
 .card:hover { transform: translateY(-5px); border: 1px solid #8e24aa; }
 .card a { color: #8e24aa; text-decoration: none; font-weight: bold; }
 footer { text-align: center; padding: 40px 20px; background: #111; margin-top: 60px; }
+/* ... todo o seu CSS antigo aqui em cima ... */
+
+.contact-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-contact {
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  border: 1px solid #333;
+  font-size: 14px;
+}
+
+.btn-contact:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.whatsapp { background: #25D366; color: #fff; border-color: #25D366; }
+.email { background: #8e24aa; color: #fff; border-color: #8e24aa; }
+.linkedin { background: #0077b5; color: #fff; border-color: #0077b5; }
+.github { background: #24292e; color: #fff; border-color: #24292e; }
