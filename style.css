@@ -1,16 +1,31 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
     background: #121212;
-    color: white;
+    color: #fff;
     font-family: 'Segoe UI', sans-serif;
 }
 
+section { padding: 60px 20px; }
+
 .card-projeto {
     background: #1e1e1e;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
-    transition: 0.3s;
+    margin: 15px;
+    transition: transform 0.3s ease;
 }
 
 .card-projeto:hover {
     transform: translateY(-5px);
+}
+
+.btn {
+    background: #8e24aa;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
 }
