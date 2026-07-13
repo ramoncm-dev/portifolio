@@ -1,24 +1,16 @@
-/* VOLTA A VERSÃO ANTIGA DOS CARDS */
+body {
+    background: #121212;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
 .card-projeto {
     background: #1e1e1e;
-    padding: 25px;
+    padding: 20px;
     border-radius: 10px;
-    text-align: center;
     transition: 0.3s;
 }
 
 .card-projeto:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 15px rgba(142, 36, 170, 0.4);
-}
-
-.btn {
-    display: inline-block;
-    background: #8e24aa;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 10px;
 }
