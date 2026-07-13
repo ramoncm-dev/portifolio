@@ -1,69 +1,100 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background: #121212;
-    color: white;
-    font-family: 'Segoe UI', sans-serif;
-}<title>Ramon | Desenvolvedor</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: #121212; color: white; font-family: 'Segoe UI', sans-serif; }
-header { background: #1e1e1e; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
-header h1 { color: #8e24aa; font-size: 1.8rem; }
-header nav a { color: #8e24aa; text-decoration: none; margin: 0 15px; font-weight: bold; }
-section { padding: 80px 40px; max-width: 1100px; margin: auto; }
-h2 { color: #8e24aa; font-size: 2.2rem; margin-bottom: 20px; }
-.btn { background: #8e24aa; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; display: inline-block; margin: 10px 5px; font-weight: bold; }
-.btn:hover { background: #7b1fa2; }
-.card-projeto { background: #1e1e1e; padding: 25px; border-radius: 12px; margin: 20px 0; border: 1px solid #2a2a2a; }
-.card-projeto:hover { transform: translateY(-8px); border: 1px solid #8e24aa; box-shadow: 0 0 25px rgba(142, 36, 170, 0.5); }
-img { max-width: 300px; border-radius: 10px; margin-top: 20px; }
-</style>
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
 
 header {
-    background: #1e1e1e;
-    padding: 20px 40px;
+    background: #1a1a1a;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
-header h1 { color: #8e24aa; font-size: 1.8rem; }
+
+header h1 {
+    color: #8e24aa;
+    font-size: 1.5rem;
+}
+
 header nav a {
     color: #8e24aa;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 1.1rem;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-section { padding: 80px 40px; max-width: 1100px; margin: auto; }
-section h2 { color: #8e24aa; font-size: 2.2rem; margin-bottom: 20px; }
+header nav a:hover {
+    color: #ffffff;
+}
+
+section {
+    padding: 100px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#inicio {
+    padding-top: 150px;
+    text-align: center;
+}
+
+#inicio h2 {
+    font-size: 2.5rem;
+    color: #8e24aa;
+}
+
+h2 {
+    color: #8e24aa;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
 
 .btn {
     background: #8e24aa;
     color: white;
-    padding: 12px 24px;
+    padding: 12px 30px;
     border-radius: 8px;
     text-decoration: none;
     display: inline-block;
-    margin: 10px 5px;
+    margin: 10px;
     font-weight: bold;
     transition: 0.3s;
 }
-.btn:hover { background: #7b1fa2; transform: scale(1.05); }
+
+.btn:hover {
+    background: #7b1fa2;
+    transform: translateY(-2px);
+}
 
 .card-projeto {
     background: #1e1e1e;
-    padding: 25px;
+    padding: 30px;
     border-radius: 12px;
     margin: 20px 0;
-    border: 1px solid #2a2a2a;
+    border-left: 4px solid #8e24aa;
     transition: 0.3s;
 }
+
 .card-projeto:hover {
-    transform: translateY(-8px);
-    border: 1px solid #8e24aa;
-    box-shadow: 0 0 25px rgba(142, 36, 170, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(142, 36, 170, 0.3);
 }
 
-img { max-width: 300px; border-radius: 10px; margin-top: 20px; }
+img {
+    max-width: 250px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
