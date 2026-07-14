@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Ramon | Desenvolvedor</title>
+  <title>Ramon | Desenvolvedor</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,13 +13,13 @@
       <ul>
         <li><a href="#home">Início</a></li>
         <li><a href="#skills">Habilidades</a></li>
-        <li><a href="calculadora.html">Ver Projeto</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="calculadora.html">Ver Projeto</a></li> <!-- Fechei aqui -->
+        <li><a href="#contatos">Contato</a></li> <!-- Tirei o S pra bater com o footer -->
       </ul>
     </nav>
   </header>
 
-<section class="hero" id="home">
+  <section class="hero" id="home">
     <div>
       <h1>Oi, eu sou Ramon</h1>
       <p>Desenvolvedor Full Stack em formação | React + Node.js + Banco de Dados</p>
@@ -27,32 +27,24 @@
       <a href="https://github.com/ramoncm-dev" target="_blank" class="btn">Ver GitHub</a>
       <a href="#" class="btn btn-outline">Baixar CV</a>
     </div>
-        <img src="img/perfil.jpg" alt="Foto de Ramon">
+    <img src="img/perfil.jpg" alt="Foto de Ramon">
   </section>
 
   <section id="sobre" class="sobre">
     <div class="container">
       <h2>Sobre Mim</h2>
-      <p>
-        Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> iniciando em abril de 2026. 
-        Apaixonado por tecnologia e desenvolvimento web, estou focado em me tornar um desenvolvedor Full Stack.
-      </p>
-      <p>
-        Tenho experiência prática com HTML, CSS e JavaScript e estou em constante aprendizado de novas tecnologias 
-        como React, Node.js e bancos de dados. Meu objetivo é construir aplicações que resolvem problemas reais.
-      </p>
-   <div class="info-grid">
-  <div><strong>Curso:</strong> ADS - Análise e Desenvolvimento de Sistemas</div>
-  <div><strong>Início:</strong> Abril 2026</div>
-  <div><strong>Foco:</strong> Desenvolvimento Web Full Stack</div>
-  <div><strong>Local:</strong> Contagem MG</div>
-</div>
+      <p>Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> iniciando em abril de 2026.</p>
+      <div class="info-grid">
+        <div><strong>Curso:</strong> ADS - Análise e Desenvolvimento de Sistemas</div>
+        <div><strong>Início:</strong> Abril 2026</div>
+        <div><strong>Foco:</strong> Desenvolvimento Web Full Stack</div>
+        <div><strong>Local:</strong> Contagem MG</div>
+      </div>
     </div>
   </section>
 
   <section id="skills" class="skills">
     <h2>Habilidades</h2>
-    
     <h3 class="skills-titulo">Domínio</h3>
     <div class="grid">
       <div class="skill dominio">HTML5</div>
@@ -60,7 +52,6 @@
       <div class="skill dominio">JavaScript</div>
       <div class="skill dominio">Git & GitHub</div>
     </div>
-
     <h3 class="skills-titulo">Aprendendo</h3>
     <div class="grid">
       <div class="skill aprendendo">React</div>
@@ -74,44 +65,37 @@
   <section id="projetos" class="projetos">
     <h2>Meus Projetos</h2>
     <div class="grid">
-<div class="card-projeto">
-  <h3>Calculadora</h3>
-  <p>Projeto com HTML, CSS e JavaScript puro.<br>Operações básicas + responsivo.</p>
-  <a href="calculadora.html" class="btn">Ver Projeto</a>
-</div>
+      <div class="card-projeto">
+        <h3>Calculadora</h3>
+        <p>Projeto com HTML, CSS e JavaScript puro.<br>Operações básicas + responsivo.</p>
+        <a href="calculadora.html" class="btn">Ver Projeto</a>
+      </div>
 
-<div class="card-projeto">
-  <h3>Portfólio Pessoal</h3>
-  <p>Site desenvolvido com HTML e CSS.<br>Deploy na Vercel.</p>
-  <span class="btn" style="background: #555; cursor: default;">Você está aqui</span>
-</div>
+      <div class="card-projeto">
+        <h3>Portfólio Pessoal</h3>
+        <p>Site desenvolvido com HTML e CSS.<br>Deploy na Vercel.</p>
+        <span class="btn" style="background: #555; cursor: default;">Você está aqui</span>
+      </div>
 
-<div class="card-projeto">
-  <h3>Em Breve</h3>
-  <p>Novo projeto sendo desenvolvido<br>durante o curso de ADS.</p>
-  <span class="btn" style="background: #555; cursor: default;">Aguardando</span>
-</div>
+      <div class="card-projeto">
+        <h3>Em Breve</h3>
+        <p>Novo projeto sendo desenvolvido<br>durante o curso de ADS.</p>
+        <span class="btn" style="background: #555; cursor: default;">Aguardando</span>
+      </div>
+    </div> <!-- Fechei a div grid aqui -->
   </section>
 
-<footer id="contatos">
-  <div class="container">
-    <h2>Contato</h2>
-    <p>Vamos conversar? Me chama em uma das opções abaixo 👇</p>
-    
-    <div class="contact-buttons">
-      <a href="https://wa.me/5531982817734" target="_blank" class="btn-contact whatsapp">
-        WhatsApp
-      </a>
-      <a href="mailto:ramon.devl@gmail.com" class="btn-contact email">
-        E-mail
-      </a>
-      <a href="https://linkedin.com/in/ramoncarvalhoacd" target="_blank" class="btn-contact linkedin">
-        LinkedIn
-      </a>
+  <footer id="contatos"> <!-- Deixei com S pra bater com o menu -->
+    <div class="container">
+      <h2>Contato</h2>
+      <p>Vamos conversar? Me chama em uma das opções abaixo 👇</p>
+      <div class="contact-buttons">
+        <a href="https://wa.me/5531982817734" target="_blank" class="btn-contact whatsapp">WhatsApp</a>
+        <a href="mailto:ramon.devl@gmail.com" class="btn-contact email">E-mail</a>
+        <a href="https://linkedin.com/in/ramoncarvalhoacd" target="_blank" class="btn-contact linkedin">LinkedIn</a>
+      </div>
+      <p class="copyright">© 2026 ramoncm-dev | Feito com ☕ e muito código</p>
     </div>
-
-    <p class="copyright">© 2026 ramoncm-dev | Feito com ☕ e muito código</p>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
