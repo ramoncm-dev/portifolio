@@ -200,3 +200,26 @@ img {
 .card-skill.aprendendo {
     border-color: #ff9800;
 }
+.img-projeto {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(142, 36, 170, 0.3);
+}
+
+.botoes-projeto {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #8e24aa;
+}
+
+.btn-outline:hover {
+  background: #8e24aa;
+}
