@@ -232,6 +232,22 @@
       border-color: #8e24aa;
     }
 
+    /* NOVO: Estilos para imagem e botoes dos projetos */
+    .img-projeto {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(142, 36, 170, 0.3);
+    }
+
+    .botoes-projeto {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
     footer { 
       background: #0f0f0f; 
       padding: 60px 20px; 
@@ -298,12 +314,12 @@
 
   <section class="hero" id="home">
     <div>
-  <h1>Oi, eu sou Ramon</h1>
-  <p class="subtitulo">Transformo ideias em código | Futuro Desenvolvedor Full Stack</p>
-  <p class="data">Estudante de ADS UNA Contagem | Início: 15/07/2026</p>
-  <a href="#projetos" class="btn">Ver Projetos</a>
-  <a href="https://github.com/ramoncm-dev" target="_blank" class="btn btn-outline">Ver GitHub</a>
-</div>
+      <h1>Oi, eu sou Ramon</h1>
+      <p class="subtitulo">Transformo ideias em código | Futuro Desenvolvedor Full Stack</p>
+      <p class="data">Estudante de ADS UNA Contagem | Início: 15/07/2026</p>
+      <a href="#projetos" class="btn">Ver Projetos</a>
+      <a href="https://github.com/ramoncm-dev" target="_blank" class="btn btn-outline">Ver GitHub</a>
+    </div>
     <img src="img/perfil.jpg" alt="Foto de Ramon">
   </section>
 
@@ -356,23 +372,36 @@
   <section id="projetos">
     <h2>Meus Projetos</h2>
     <div class="grid">
+      
       <div class="card-projeto">
+        <img src="img/calculadora.png" alt="Print da Calculadora" class="img-projeto">
         <h3>Calculadora</h3>
-        <p>Projeto com HTML, CSS e JavaScript puro.<br>Operações básicas + responsivo.</p>
-        <a href="calculadora.html" class="btn">Ver Projeto</a>
+        <p>Projeto com HTML, CSS e JavaScript puro. Operações básicas + responsivo.<br>Desenvolvido pra treinar lógica e manipulação do DOM.</p>
+        <div class="botoes-projeto">
+          <a href="calculadora.html" class="btn">Ver Projeto</a>
+          <a href="https://github.com/ramoncm-dev/calculadora" target="_blank" class="btn btn-outline">Ver Código</a>
+        </div>
       </div>
 
       <div class="card-projeto">
+        <img src="img/portfolio.png" alt="Print do Portfólio" class="img-projeto">
         <h3>Portfólio Pessoal</h3>
-        <p>Site desenvolvido com HTML e CSS.<br>Deploy na Vercel.</p>
-        <a href="#" class="btn">Ver Projeto</a>
+        <p>Site desenvolvido com HTML e CSS. Deploy na Vercel.<br>Criado pra mostrar minhas habilidades e projetos como dev.</p>
+        <div class="botoes-projeto">
+          <a href="#" class="btn">Você está aqui</a>
+          <a href="https://github.com/ramoncm-dev/portifolio" target="_blank" class="btn btn-outline">Ver Código</a>
+        </div>
       </div>
 
       <div class="card-projeto">
+        <img src="img/em-breve.png" alt="Em Breve" class="img-projeto">
         <h3>Em Breve</h3>
-        <p>Novo projeto sendo desenvolvido<br>durante o curso de ADS.</p>
-        <span class="btn" style="background: #555; cursor: default; box-shadow: none;">Aguardando</span>
+        <p>Novo projeto sendo desenvolvido durante o curso de ADS.<br>Aguarde novidades em React e Node.js.</p>
+        <div class="botoes-projeto">
+          <span class="btn" style="background: #555; cursor: default; box-shadow: none;">Aguardando</span>
+        </div>
       </div>
+
     </div>
   </section>
 
