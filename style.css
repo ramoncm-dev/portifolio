@@ -144,3 +144,51 @@ img {
     font-size: 1rem;
     margin: 0;
 }
+/* SEÇÃO HABILIDADES */
+#habilidades {
+    text-align: center;
+}
+
+.habilidades-container {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.habilidades-container h3 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card-skill {
+    background: #1e1e1e;
+    padding: 18px 25px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    text-align: center;
+    font-weight: 600;
+    transition: 0.3s;
+    border-left: 4px solid;
+}
+
+.card-skill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Borda verde para Dominio */
+.card-skill.dominio {
+    border-color: #4caf50;
+}
+
+/* Borda laranja para Aprendendo */
+.card-skill.aprendendo {
+    border-color: #ff9800;
+}
