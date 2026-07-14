@@ -56,6 +56,14 @@ section {
     color: #8e24aa;
 }
 
+/* NOVO: Estilo do subtitulo do Hero */
+.subtitulo {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin: 15px 0;
+  text-shadow: 0 0 10px rgba(142, 36, 170, 0.4);
+}
+
 h2 {
     color: #8e24aa;
     font-size: 2rem;
