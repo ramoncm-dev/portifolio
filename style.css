@@ -9,31 +9,44 @@ body {
     color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+    padding-top: 80px; /* Espaço pro header fixo */
 }
 
 header {
     background: #1a1a1a;
-    padding: 20px 50px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
     z-index: 1000;
+    flex-wrap: wrap;
 }
 
 header h1 {
     color: #8e24aa;
     font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+header nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
 }
 
 header nav a {
     color: #8e24aa;
     text-decoration: none;
-    margin-left: 25px;
+    margin: 0 10px;
     font-weight: 600;
+    font-size: 0.9rem;
     transition: 0.3s;
+    display: inline-block;
 }
 
 header nav a:hover {
@@ -41,7 +54,7 @@ header nav a:hover {
 }
 
 section {
-    padding: 100px 50px;
+    padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -51,13 +64,17 @@ section {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    padding-top: 150px;
+}
+
+.hero div {
+    flex: 1;
 }
 
 .hero img { 
     max-width: 250px; 
     border-radius: 50%; 
     border: 3px solid #8e24aa;
+    flex-shrink: 0;
 }
 
 #inicio h2 {
@@ -65,18 +82,17 @@ section {
     color: #8e24aa;
 }
 
-/* NOVO: Estilo do subtitulo do Hero */
 .subtitulo {
   font-size: 1.2rem;
   color: #ffffff;
   margin: 15px 0;
-  text-shadow: 0 0 10px rgba(142, 36, 170, 0.4);
 }
 
 h2 {
     color: #8e24aa;
     font-size: 2rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .btn {
@@ -86,7 +102,7 @@ h2 {
     border-radius: 8px;
     text-decoration: none;
     display: inline-block;
-    margin: 10px;
+    margin: 10px 5px;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -102,18 +118,6 @@ h2 {
     border-radius: 12px;
     margin: 20px 0;
     border-left: 4px solid #8e24aa;
-    transition: 0.3s;
-}
-
-.card-projeto:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(142, 36, 170, 0.3);
-}
-
-/* SOBRE MIM EM CARDS LADO A LADO */
-#sobre {
-    text-align: center;
-    padding: 100px 50px;
 }
 
 .card-container {
@@ -130,12 +134,6 @@ h2 {
     border-radius: 12px;
     border-top: 4px solid #8e24aa;
     width: 250px;
-    transition: 0.3s;
-}
-
-.card-info:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(142, 36, 170, 0.3);
 }
 
 .card-info strong {
@@ -144,30 +142,13 @@ h2 {
     font-size: 0.9rem;
     margin-bottom: 8px;
     text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* SEÇÃO HABILIDADES */
-#habilidades {
-    text-align: center;
-}
-
-.habilidades-container {
-    text-align: left;
-    margin-top: 40px;
-}
-
-.habilidades-container h3 {
-    color: #ffffff;
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-    margin-top: 30px;
 }
 
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    justify-content: center;
 }
 
 .card-skill {
@@ -175,26 +156,19 @@ h2 {
     padding: 18px 25px;
     border-radius: 10px;
     flex: 1 1 250px;
+    max-width: 300px;
     text-align: center;
     font-weight: 600;
-    transition: 0.3s;
     border-left: 4px solid;
 }
 
-.card-skill.dominio {
-    border-color: #4caf50;
-}
-
-.card-skill.aprendendo {
-    border-color: #ff9800;
-}
+.card-skill.dominio { border-color: #4caf50; }
+.card-skill.aprendendo { border-color: #ff9800; }
 
 .img-projeto {
   width: 100%;
-  max-width: 100%;
   border-radius: 8px;
   margin-bottom: 15px;
-  border: 1px solid rgba(142, 36, 170, 0.3);
 }
 
 .botoes-projeto {
@@ -209,66 +183,59 @@ h2 {
   border: 2px solid #8e24aa;
 }
 
-.btn-outline:hover {
-  background: #8e24aa;
-}
-
-/* RESPONSIVO PARA CELULAR - CORRIGIDO */
+/* MOBILE FORÇADO */
 @media (max-width: 768px) {
   
+  body {
+    padding-top: 110px;
+  }
+
   header {
-    padding: 15px 20px;
     flex-direction: column;
-    gap: 10px;
+    padding: 10px;
   }
 
   header h1 {
-    font-size: 1.3rem;
-  }
-
-  header nav a {
-    margin: 0 8px;
-    font-size: 0.9rem;
-  }
-
-  section {
-    padding: 100px 20px;
+    font-size: 1.2rem;
   }
 
   .hero {
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important; /* FORÇA FOTO PRA CIMA */
     text-align: center;
-    padding-top: 120px;
-    gap: 20px;
+    gap: 25px;
   }
 
   .hero img { 
-    max-width: 180px; 
+    max-width: 160px !important; 
+    margin: 0 auto;
   }
 
   #inicio h2 {
     font-size: 1.8rem;
   }
 
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .card-info {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
   }
 
   .skills-grid {
     flex-direction: column;
+    align-items: center;
   }
 
   .card-skill {
-    flex: 1 1 100%;
+    width: 100%;
+    max-width: 400px;
+    flex: none;
   }
 
   .botoes-projeto {
     justify-content: center;
+  }
+
+  .btn {
+    width: 80%;
+    text-align: center;
   }
 }
