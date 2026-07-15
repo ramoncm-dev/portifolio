@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ramon | Desenvolvedor</title>
-  <link rel="icon" href="favicon.ico?v=3" type="image/x-icon">
+  <link rel="icon" href="favicon.ico?v=4" type="image/x-icon">
   <style>
     * { 
       margin: 0; 
@@ -94,6 +94,12 @@
       border-radius: 50%; 
       border: 3px solid #8e24aa;
       box-shadow: 0 0 30px rgba(142, 36, 170, 0.6);
+      transition: 0.3s;
+    }
+    
+    .hero img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 40px rgba(142, 36, 170, 0.9);
     }
 
     .btn { 
@@ -105,13 +111,13 @@
       display: inline-block; 
       margin: 10px 5px; 
       font-weight: bold;
-      transition: 0.3s;
+      transition: all 0.3s ease;
       box-shadow: 0 0 15px rgba(142, 36, 170, 0.5);
     }
     
     .btn:hover { 
       background: #9c27b0; 
-      transform: translateY(-2px);
+      transform: translateY(-3px) scale(1.05);
       box-shadow: 0 0 25px rgba(142, 36, 170, 0.9);
     }
     
@@ -145,13 +151,13 @@
       border-radius: 12px;
       border: 1px solid rgba(142, 36, 170, 0.3);
       width: 250px;
-      transition: 0.3s;
+      transition: all 0.3s ease;
       box-shadow: 0 0 15px rgba(142, 36, 170, 0.2);
     }
     
     .card-info:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 30px rgba(142, 36, 170, 0.6);
+      transform: translateY(-8px);
+      box-shadow: 0 0 35px rgba(142, 36, 170, 0.8);
       border-color: #8e24aa;
     }
     
@@ -191,12 +197,12 @@
       border-radius: 10px; 
       text-align: center;
       font-weight: 600;
-      transition: 0.3s;
+      transition: all 0.3s ease;
       border: 1px solid;
     }
     
     .skill:hover {
-      transform: translateY(-3px) scale(1.02);
+      transform: translateY(-5px) scale(1.03);
     }
     
     .dominio { 
@@ -205,7 +211,7 @@
     }
     
     .dominio:hover {
-      box-shadow: 0 0 25px rgba(76, 175, 80, 0.7);
+      box-shadow: 0 0 30px rgba(76, 175, 80, 0.8);
     }
     
     .aprendendo { 
@@ -214,7 +220,7 @@
     }
     
     .aprendendo:hover {
-      box-shadow: 0 0 25px rgba(255, 152, 0, 0.7);
+      box-shadow: 0 0 30px rgba(255, 152, 0, 0.8);
     }
 
     .card-projeto { 
@@ -222,24 +228,28 @@
       padding: 30px; 
       border-radius: 12px; 
       border: 1px solid rgba(142, 36, 170, 0.3);
-      transition: 0.3s;
+      transition: all 0.4s ease;
       text-align: left;
       box-shadow: 0 0 15px rgba(142, 36, 170, 0.2);
     }
     
     .card-projeto:hover { 
-      transform: translateY(-5px); 
-      box-shadow: 0 0 30px rgba(142, 36, 170, 0.6);
+      transform: translateY(-12px); 
+      box-shadow: 0 0 40px rgba(142, 36, 170, 0.8);
       border-color: #8e24aa;
     }
 
-    /* NOVO: Estilos para imagem e botoes dos projetos */
     .img-projeto {
       width: 100%;
       max-width: 100%;
       border-radius: 8px;
       margin-bottom: 15px;
       border: 1px solid rgba(142, 36, 170, 0.3);
+      transition: transform 0.4s ease;
+    }
+
+    .card-projeto:hover .img-projeto {
+      transform: scale(1.05);
     }
 
     .botoes-projeto {
@@ -271,11 +281,11 @@
       text-decoration: none; 
       color: white; 
       font-weight: bold;
-      transition: 0.3s;
+      transition: all 0.3s ease;
     }
     
     .btn-contact:hover {
-      transform: translateY(-2px) scale(1.05);
+      transform: translateY(-3px) scale(1.05);
       filter: brightness(1.2);
     }
     
@@ -297,7 +307,6 @@
       color: #888;
     }
 
-    /* ANIMAÇÃO SCROLL */
     .fade-in {
         opacity: 0;
         transform: translateY(30px);
