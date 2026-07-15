@@ -212,3 +212,23 @@ h2 {
     opacity: 1;
     transform: translateY(0);
 }
+/* EFEITO HOVER NOS CARDS */
+.card {
+    transition: all 0.3s ease; /* deixa a animação suave */
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* levanta o card 10px pra cima */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* sombra pra dar profundidade */
+}
+
+/* Efeito no botão também */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05); /* botão cresce um pouco */
+    background-color: #0056b3; /* muda a cor se quiser */
+}
