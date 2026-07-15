@@ -295,6 +295,18 @@
       margin-top: 30px;
       color: #888;
     }
+
+    /* ANIMAÇÃO SCROLL */
+    .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
   </style>
 </head>
 
@@ -321,57 +333,57 @@
     <img src="img/perfil.jpg" alt="Foto de Ramon">
   </section>
 
-  <section id="sobre">
+  <section id="sobre" class="fade-in">
     <h2>Sobre Mim</h2>
     <p style="margin-bottom: 20px;">Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> iniciando em julho de 2026.</p>
     
     <div class="card-container">
-      <div class="card-info">
+      <div class="card-info fade-in">
         <strong>Curso</strong>
         <p>ADS - Análise e Desenvolvimento de Sistemas</p>
       </div>
       
-      <div class="card-info">
+      <div class="card-info fade-in">
         <strong>Início</strong>
         <p>Início do curso: 15/07/2026</p>
       </div>
       
-      <div class="card-info">
+      <div class="card-info fade-in">
         <strong>Foco</strong>
         <p>Desenvolvimento Full Stack</p>
       </div>
       
-      <div class="card-info">
+      <div class="card-info fade-in">
         <strong>Local</strong>
         <p>UNA Contagem MG</p>
       </div>
     </div>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="fade-in">
     <h2>Habilidades</h2>
     <h3 class="skills-titulo">Domínio</h3>
     <div class="grid">
-      <div class="skill dominio">HTML5</div>
-      <div class="skill dominio">CSS3</div>
-      <div class="skill dominio">JavaScript</div>
-      <div class="skill dominio">Git & GitHub</div>
+      <div class="skill dominio fade-in">HTML5</div>
+      <div class="skill dominio fade-in">CSS3</div>
+      <div class="skill dominio fade-in">JavaScript</div>
+      <div class="skill dominio fade-in">Git & GitHub</div>
     </div>
     <h3 class="skills-titulo">Aprendendo</h3>
     <div class="grid">
-      <div class="skill aprendendo">React</div>
-      <div class="skill aprendendo">Node.js</div>
-      <div class="skill aprendendo">Banco de Dados - MySQL</div>
-      <div class="skill aprendendo">Tailwind CSS</div>
-      <div class="skill aprendendo">Python</div>
+      <div class="skill aprendendo fade-in">React</div>
+      <div class="skill aprendendo fade-in">Node.js</div>
+      <div class="skill aprendendo fade-in">Banco de Dados - MySQL</div>
+      <div class="skill aprendendo fade-in">Tailwind CSS</div>
+      <div class="skill aprendendo fade-in">Python</div>
     </div>
   </section>
 
-  <section id="projetos">
+  <section id="projetos" class="fade-in">
     <h2>Meus Projetos</h2>
     <div class="grid">
       
-      <div class="card-projeto">
+      <div class="card-projeto fade-in">
         <img src="img/calculadora.jpeg" alt="Print da Calculadora" class="img-projeto">
         <h3>Calculadora</h3>
         <p>Projeto com HTML, CSS e JavaScript puro. Operações básicas + responsivo.<br>Desenvolvido pra treinar lógica e manipulação do DOM.</p>
@@ -381,7 +393,7 @@
         </div>
       </div>
 
-      <div class="card-projeto">
+      <div class="card-projeto fade-in">
         <img src="img/portifolio.jpeg" alt="Print do Portfólio" class="img-projeto">
         <h3>Portfólio Pessoal</h3>
         <p>Site desenvolvido com HTML e CSS. Deploy na Vercel.<br>Criado pra mostrar minhas habilidades e projetos como dev.</p>
@@ -391,7 +403,7 @@
         </div>
       </div>
 
-      <div class="card-projeto">
+      <div class="card-projeto fade-in">
   <img src="img/em breve.jpeg" alt="Em Breve" class="img-projeto">
   <h3>Em Breve</h3>
   <p>Novo projeto sendo desenvolvido durante o curso de ADS.<br>Aguarde novidades em React e Node.js.</p>
@@ -404,7 +416,7 @@
     </div>
   </section>
 
-  <footer id="contatos">
+  <footer id="contatos" class="fade-in">
     <div class="container">
       <h2>Contatos</h2>
       <p>Curtiu meu trabalho? Vamos conversar sobre o seu próximo projeto. 👇</p>
@@ -416,8 +428,21 @@
       <p class="copyright">© 2026 ramoncm-dev | Feito com ☕ e muito código</p>
     </div>
   </footer>
+
+  <script>
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+          }
+      });
+  }, {
+      threshold: 0.1
+  });
+
+  document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+  });
+  </script>
 </body>
 </html>
-
-
-substitua o código, sem alterar nada além disso
