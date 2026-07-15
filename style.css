@@ -46,9 +46,18 @@ section {
     margin: 0 auto;
 }
 
-#inicio {
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
     padding-top: 150px;
-    text-align: center;
+}
+
+.hero img { 
+    max-width: 250px; 
+    border-radius: 50%; 
+    border: 3px solid #8e24aa;
 }
 
 #inicio h2 {
@@ -101,20 +110,10 @@ h2 {
     box-shadow: 0 10px 20px rgba(142, 36, 170, 0.3);
 }
 
-img {
-    max-width: 250px;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
 /* SOBRE MIM EM CARDS LADO A LADO */
 #sobre {
     text-align: center;
     padding: 100px 50px;
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .card-container {
@@ -148,10 +147,6 @@ img {
     letter-spacing: 1px;
 }
 
-.card-info p {
-    font-size: 1rem;
-    margin: 0;
-}
 /* SEÇÃO HABILIDADES */
 #habilidades {
     text-align: center;
@@ -186,20 +181,14 @@ img {
     border-left: 4px solid;
 }
 
-.card-skill:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* Borda verde para Dominio */
 .card-skill.dominio {
     border-color: #4caf50;
 }
 
-/* Borda laranja para Aprendendo */
 .card-skill.aprendendo {
     border-color: #ff9800;
 }
+
 .img-projeto {
   width: 100%;
   max-width: 100%;
@@ -224,38 +213,41 @@ img {
   background: #8e24aa;
 }
 
-/* RESPONSIVO PARA CELULAR */
+/* RESPONSIVO PARA CELULAR - CORRIGIDO */
 @media (max-width: 768px) {
   
   header {
     padding: 15px 20px;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
   }
 
   header nav a {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 8px;
+    font-size: 0.9rem;
   }
 
   section {
     padding: 100px 20px;
   }
 
-  #inicio {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
     padding-top: 120px;
+    gap: 20px;
+  }
+
+  .hero img { 
+    max-width: 180px; 
   }
 
   #inicio h2 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  #sobre {
-    padding: 80px 20px;
+    font-size: 1.8rem;
   }
 
   .card-container {
