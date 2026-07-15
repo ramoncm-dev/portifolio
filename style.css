@@ -1,234 +1,74 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: #121212;
-    color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    padding-top: 70px;
-}
-
-header {
-    background: #1a1a1a;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(142, 36, 170, 0.3);
-}
-
-header nav {
-    display: flex;
-    justify-content: center; /* CENTRALIZA O MENU */
-    align-items: center;
-}
-
-header ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-header a {
-    color: #8e24aa;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-header a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 10px rgba(142, 36, 170, 0.8);
-}
-
-section {
-    padding: 80px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* CENTRALIZA TUDO */
-    gap: 40px;
-    text-align: center; /* TEXTO CENTRALIZADO */
-    flex-wrap: wrap;
-}
-
-.hero img { 
-    max-width: 250px; 
-    border-radius: 50%; 
-    border: 3px solid #8e24aa;
-}
-
-h1 {
-    font-size: 2.8rem;
-    color: #8e24aa;
-}
-
-h2 {
-    color: #8e24aa;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.btn {
-    background: #8e24aa;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 8px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px 5px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #9c27b0;
-    transform: translateY(-2px);
-}
-
-.btn-outline {
-    background: transparent;
-    border: 2px solid #8e24aa;
-}
-
-.btn-outline:hover {
-    background: #8e24aa;
-}
-
-/* CARDS CENTRALIZADOS */
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* FORÇA CENTRALIZAR */
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.card-info {
-    background: #1e1e1e;
-    padding: 25px 20px;
-    border-radius: 12px;
-    border-top: 4px solid #8e24aa;
-    width: 250px;
-    text-align: center; /* TEXTO DO CARD CENTRALIZADO */
-}
-
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center; /* CENTRALIZA HABILIDADES */
-}
-
-.card-skill {
-    background: #1e1e1e;
-    padding: 18px 25px;
-    border-radius: 10px;
-    width: 250px;
-    text-align: center;
-    font-weight: 600;
-    border-left: 4px solid;
-}
-
-.card-skill.dominio { border-color: #4caf50; }
-.card-skill.aprendendo { border-color: #ff9800; }
-
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* CENTRALIZA PROJETOS */
-    gap: 20px;
-}
-
-.card-projeto {
-    background: #1e1e1e;
-    padding: 30px;
-    border-radius: 12px;
-    border-left: 4px solid #8e24aa;
-    width: 350px;
-    text-align: center;
-}
-
-.img-projeto {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.botoes-projeto {
-  display: flex;
-  gap: 10px;
-  justify-content: center; /* BOTOES CENTRALIZADOS */
-  flex-wrap: wrap;
-  margin-top: 15px;
-}
-
-/* RESPONSIVO */
+/* RESPONSIVO PARA CELULAR */
 @media (max-width: 768px) {
-  body { padding-top: 60px; }
   
+  header {
+    padding: 15px 20px;
+  }
+
   header ul {
     gap: 15px;
-    flex-wrap: wrap;
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 100px 20px 60px;
   }
 
   .hero {
-    flex-direction: column-reverse;
+    flex-direction: column-reverse; /* foto em cima, texto embaixo */
+    text-align: center;
+    padding-top: 120px;
+    gap: 30px;
   }
 
-  .hero img { 
-    max-width: 160px; 
+  .hero img {
+    max-width: 180px;
   }
 
-  h1 { font-size: 2rem; }
-
-  .card-info, .card-skill, .card-projeto {
-    width: 100%;
-    max-width: 400px;
+  h1 {
+    font-size: 2.2rem;
   }
 
-  .btn {
-    width: 80%;
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-info {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* 1 coluna só */
+  }
+
+  .card-projeto {
+    padding: 20px;
+  }
+
+  .botoes-projeto {
+    justify-content: center;
+  }
+
+  .btn, .btn-outline {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 }
-/* ANIMAÇÃO SCROLL */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
 
-.fade-in.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-/* EFEITO HOVER NOS CARDS */
-.card {
-    transition: all 0.3s ease; /* deixa a animação suave */
-    cursor: pointer;
-}
-
-.card:hover {
-    transform: translateY(-10px); /* levanta o card 10px pra cima */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* sombra pra dar profundidade */
-}
-
-/* Efeito no botão também */
-.btn {
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    transform: scale(1.05); /* botão cresce um pouco */
-    background-color: #0056b3; /* muda a cor se quiser */
+/* RESPONSIVO PARA TELA MUITO PEQUENA */
+@media (max-width: 480px) {
+  header ul {
+    gap: 10px;
+    font-size: 0.8rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
 }
