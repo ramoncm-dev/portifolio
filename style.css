@@ -371,3 +371,16 @@
       }
     }
 </style>
+@media (max-width: 768px) {
+    * { text-align: center !important; }
+  .card-container, .grid, section { 
+    display: flex !important; 
+    flex-direction: column !important; 
+    align-items: center !important; 
+    width: 100% !important;
+  }
+  .card-info, .skill, .card-projeto { 
+    margin-left: auto !important; 
+    margin-right: auto !important; 
+  }
+}
