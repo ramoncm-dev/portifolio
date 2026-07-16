@@ -310,73 +310,81 @@
         transform: translateY(0);
     }
 
-    /* RESPONSIVO AGRESSIVO */
+    /* RESPONSIVO AGRESSIVO - FORÇADO */
     @media (max-width: 900px) {
       .hero {
-        flex-direction: column-reverse;
-        text-align: center;
-        padding-top: 120px;
-        justify-content: center;
+        flex-direction: column-reverse !important;
+        text-align: center !important;
+        padding-top: 120px !important;
+        justify-content: center !important;
+        align-items: center !important;
       }
       .hero img {
-        max-width: 200px;
-        margin: 0 auto;
+        max-width: 200px !important;
+        margin: 0 auto !important;
       }
       .hero > div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
       }
     }
 
     @media (max-width: 768px) {
-      header { padding: 15px 15px; }
-      header ul { gap: 12px; font-size: 0.9rem; }
-      section { padding: 100px 20px 60px; text-align: center; }
-      h1 { font-size: 2.2rem; }
-      h2 { font-size: 1.6rem; text-align: center; }
+      header { padding: 15px 15px !important; }
+      header ul { gap: 12px !important; font-size: 0.9rem !important; justify-content: center !important; }
+      section { padding: 100px 10px 60px !important; text-align: center !important; display: flex !important; flex-direction: column !important; align-items: center !important; width: 100% !important; }
+      h1 { font-size: 2.2rem !important; }
+      h2 { font-size: 1.6rem !important; text-align: center !important; width: 100% !important; }
       
       .card-container { 
-        justify-content: center; 
-        align-items: center;
+        justify-content: center !important; 
+        align-items: center !important;
+        width: 100% !important;
       }
       
       .card-info { 
-        width: 90%; 
-        max-width: 350px;
-        margin: 0 auto;
-        text-align: center;
+        width: 95% !important; 
+        max-width: 400px !important;
+        margin: 0 auto !important;
+        text-align: center !important;
       }
       
       .grid { 
-        grid-template-columns: 1fr; 
-        justify-items: center;
+        grid-template-columns: 1fr !important; 
+        justify-items: center !important;
+        width: 100% !important;
       }
       
       .skill {
-        width: 90%;
-        max-width: 350px;
-        margin: 0 auto;
+        width: 95% !important;
+        max-width: 400px !important;
+        margin: 0 auto !important;
       }
 
       .skills-titulo {
-        text-align: center;
+        text-align: center !important;
+        width: 100% !important;
       }
       
       .card-projeto { 
-        padding: 20px; 
-        text-align: center;
+        padding: 20px !important; 
+        text-align: center !important;
+        width: 95% !important;
+        max-width: 500px !important;
+        margin: 0 auto !important;
       }
       
       .botoes-projeto { 
-        justify-content: center; 
+        justify-content: center !important; 
       }
     }
 
     @media (max-width: 480px) {
-      header ul { gap: 8px; font-size: 0.8rem; }
-      h1 { font-size: 1.9rem; }
-      .btn { padding: 10px 20px; font-size: 0.9rem; }
+      header ul { gap: 8px !important; font-size: 0.8rem !important; }
+      h1 { font-size: 1.9rem !important; }
+      .btn { padding: 10px 20px !important; font-size: 0.9rem !important; }
     }
 </style>
